@@ -115,29 +115,30 @@ For examole:
     F1,R1,B2,L1,B3
 
 
+### Output format
 
-Output format
---------------------------
 For the readability of the result, the output will be shown in a sentence as a string. The number at the end of the
-string is the expected result you want. (as shown in the specification of the project)
+string is the desired result. (as shown in the specification of the project)
 
 For example:
-If you implement Function 4. Calculate the length of the shortest path between two towns from A to C.
-The Result you will get from the application is: "The number of trips starting at A and ending at C with exactly 4
-stops is 3". The number "3" at the end of the string is the expected output.
+If you implement the string of commands as shown in the example, the result you will get from the application is (you
+ will see this string shown in the terminal): 
+
+    "The minimum amount of distance to get back to the starting point is 4"
+
+The number "4" at the end of this string is the expected output.
 
 That is:
-"The number of trips starting at A and ending at C with exactly 4 stops is 3"
-=> Output: 3
+
+    "The minimum amount of distance to get back to the starting point is 4"
+    
+    => Output: 4
 
 
-Classes in this project 
---------------------------
-Routes - the main class including different methods to realise calculation functions of the application.
-Edge - the edge class represents an edge in the graph.
-Town - the town class represents a town in the graph.
-RouteNotFoundException - the exception will be thrown when the application cannot find such route 
-Main - main code to execute the application 
+### Classes in this project 
+
+* Robot - the Robot class represents a robot to execute the commands 
+* Main - main code to execute the application 
 
 
 

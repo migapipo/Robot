@@ -94,7 +94,6 @@ public class MainTest {
         assertEquals("West", Main.facingDirection(testRobot.getFacingDirection()));
     }
 
-
     @Test
     public void moveRobotByCommandTest3() {
         ArrayList<String> testGivenCommandList3 = new ArrayList<> ();
@@ -127,11 +126,6 @@ public class MainTest {
         assertEquals(3, testRobot.getFacingDirection());
         assertEquals("West", Main.facingDirection(testRobot.getFacingDirection()));
     }
-
-
-
-
-
 
     @Test
     public void isEachInputCommandValidTest1() {
@@ -202,6 +196,5 @@ public class MainTest {
     public void facingDirectionTest4() {
         int testDirection = 3 ;
         assertEquals("West", Main.facingDirection(testDirection));
-
     }
 }
