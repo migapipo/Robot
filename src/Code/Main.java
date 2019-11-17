@@ -67,7 +67,7 @@ public class Main {
             do {
                 System.out.println(welcomeMessage);
 
-                // Create a scanner to read the user's choice in the terminal
+                // Create a scanner to read the users' choice in the terminal
                 Scanner userChoiceScanner = new Scanner(System.in);
                 userChoice = userChoiceScanner.nextInt();
 
@@ -77,7 +77,6 @@ public class Main {
                          * Initialise a robot object with starting point as (0, 0), starting direction as N North,
                          * distance from start point as 0
                          */
-
                         Robot robot = new Robot(ORIGIN_X, ORIGIN_Y, 0, 0);
                         System.out.println("Your robot has been created successfully! Now try to input " +
                                 "some commands to make it move! \n");
@@ -98,8 +97,7 @@ public class Main {
                         ArrayList<String> givenCommandList = parseGivenCommandStringIntoList(givenCommandString);
 
                         /*
-                         * Check the validity of the user input by checking each of the command and number combination
-                         * in the given command list
+                         * Check the validity of the user input by checking each command in the given command list
                          */
                         if (! isEachInputCommandValid(givenCommandList)) {
                             System.out.println("Invalid Entries! Please try again and re-enter another list of " +
@@ -109,10 +107,14 @@ public class Main {
 
                         // Move robot by the given commands
                         moveRobotByCommands(robot, givenCommandList);
-                        System.out.printf("Robot's final coordinate is (%s,%s) \n", robot.getCoordinateX(), robot
-                                .getCoordinateY());
-                        System.out.printf("Robot's final facing direction is %s \n", facingDirection(robot
-                                .getFacingDirection()));
+
+                        /* Considering extensibility, the coordinate and facing direction of robot can be obtained
+                        easily to extend other functions. */
+
+//                        System.out.printf("Robot's final coordinate is (%s,%s) \n", robot.getCoordinateX(), robot
+//                                .getCoordinateY());
+//                        System.out.printf("Robot's final facing direction is %s \n", facingDirection(robot
+//                                .getFacingDirection()));
 
                         // Output of this application
                         System.out.printf("The minimum amount of distance to get back to the starting point is %d " +
@@ -123,8 +125,8 @@ public class Main {
                         break;
 
                     case 2:
-                        // If userInput is 2, exit the application and sleep for a short time before re-run the
-                        // application
+                        /* If userInput is 2, exit the application and sleep for a short time before re-run the
+                        application */
                         exit = true;
                         System.out.println("Exit the application successful!");
                         System.out.println("Thank you! ");
@@ -148,7 +150,7 @@ public class Main {
 
 
     /**
-     * This method is used to parse the given command from a string of comma-separated commands into the ArrayList.
+     * Parse the given command from a string of comma-separated commands into the ArrayList.
      *
      * @param givenCommandString the string of given command, which include different commands separated by comma
      * @return An ArrayList including all the given commands
@@ -246,7 +248,6 @@ public class Main {
 
     }
 
-
     /**
      * Check if each command in the given command list is one of the available commands
      * <p>
@@ -282,7 +283,6 @@ public class Main {
         return true;
     }
 
-
     /**
      * Represent each direction with numbers.
      * North - 0 (Initial direction)
@@ -317,6 +317,5 @@ public class Main {
         }
         return facingDirection;
     }
-
 
 }

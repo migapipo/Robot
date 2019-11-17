@@ -84,9 +84,9 @@ For now, there are 2 options for users to choose:
 
    You can see the main menu as follows including 2 choices:
    
-        1. Create a new robot to start the game 
+         1. Create a new robot to start the game 
         
-        2. Exit the application
+         2. Exit the application
         
 4. Make your selection by typing 1 or 2. Enter a number of "1" or "2" to continue. 
 
@@ -97,7 +97,7 @@ The result of this application will be given in a string format. Also, you can s
 instructions given by the application to reach the output.
 NOTE: All the inputs should follow the input format, otherwise the application will output a string says: 
             
-            "Invalid Entries! Please try again and re-enter another list of commands! "
+        "Invalid Entries! Please try again and re-enter another list of commands! "
      
    It indicates that the format of the input is not correct. 
    You need to try again to input a string of comma-separated commands in correct format.
@@ -105,6 +105,39 @@ NOTE: All the inputs should follow the input format, otherwise the application w
 7. After the main function of the application implemented, the application will return to the main menu. You can 
 choose to continue or exit the application.
 
+
+### Input format
+
+In this program, the input should be a string of comma-separated commands
+
+For examole:
+
+    F1,R1,B2,L1,B3
+
+
+
+Output format
+--------------------------
+For the readability of the result, the output will be shown in a sentence as a string. The number at the end of the
+string is the expected result you want. (as shown in the specification of the project)
+
+For example:
+If you implement Function 4. Calculate the length of the shortest path between two towns from A to C.
+The Result you will get from the application is: "The number of trips starting at A and ending at C with exactly 4
+stops is 3". The number "3" at the end of the string is the expected output.
+
+That is:
+"The number of trips starting at A and ending at C with exactly 4 stops is 3"
+=> Output: 3
+
+
+Classes in this project 
+--------------------------
+Routes - the main class including different methods to realise calculation functions of the application.
+Edge - the edge class represents an edge in the graph.
+Town - the town class represents a town in the graph.
+RouteNotFoundException - the exception will be thrown when the application cannot find such route 
+Main - main code to execute the application 
 
 
 
