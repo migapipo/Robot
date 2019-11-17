@@ -50,6 +50,18 @@ public class MainTest {
     }
 
     @Test
+    public void mainFunctionTest4() {
+        ArrayList<String> testGivenCommandList4 = new ArrayList<> ();
+        testGivenCommandList4.add("F1");
+        testGivenCommandList4.add("B9");
+        testGivenCommandList4.add("F8");
+        testGivenCommandList4.add("R9");
+
+        Main.moveRobotByCommands(testRobot,testGivenCommandList4);
+        assertEquals(0, testRobot.getDistanceFromStartPoint());
+    }
+
+    @Test
     public void moveRobotByCommandTest1() {
         ArrayList<String> testGivenCommandList1 = new ArrayList<> ();
         testGivenCommandList1.add("F1");
