@@ -3,14 +3,15 @@ public class Robot {
 
     int coordinateX;
     int coordinateY;
-
     int facingDirection;
+    int distanceFromStartPoint;
 
-    public Robot(int coordinateX, int coordinateY, int facingDirection) {
+    public Robot(int coordinateX, int coordinateY, int facingDirection, int distanceFromStartPoint) {
 
         this.coordinateX = coordinateX;
         this.coordinateY = coordinateY;
         this.facingDirection = facingDirection;
+        this.distanceFromStartPoint = distanceFromStartPoint;
 
     }
 
@@ -38,4 +39,11 @@ public class Robot {
         this.facingDirection = facingDirection;
     }
 
+    public int getDistanceFromStartPoint() {
+        return distanceFromStartPoint;
+    }
+
+    public void setDistanceFromStartPoint(int distanceFromStartPoint) {
+        this.distanceFromStartPoint = distanceFromStartPoint;
+    }
 }
