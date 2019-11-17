@@ -1,11 +1,28 @@
-# Code.Robot CLI Application
+## Robot CLI Application
+
+This Robot application is a CLI application, which can be used to parse commands and display the result.
+
+### Introductions
+A robot can receive commands and move forwards or backwards, and turn left or right. The robot can receive a 
+string of commands and will output the robot's distance from it's starting point. 
 
 
-## Introductions
-A robot can receive commands and move forwards or backwards, and turn left or right. This is a CLI application can receive a string of commands and will output the robot's distance from it's 
-starting point. 
+### Requirements
+
+* JDK1.8
+* IDE
+* JUnit4 (for running the unit test) 
 
 
+### Contents
+
+This zip file contains the source code of this application:
+
+    /README.md - this file
+    /Code - main function code to implement the application
+    /Test - the unit test using JUnit4 library
+    
+## Background
                N
                |
                |
@@ -13,8 +30,7 @@ starting point.
                |
                |
                S 
-                       
-           
+                            
    
 The move Forward("F") changes either x or y according to following rules.
 * a) If current direction is North, then "F" increments y and doesn’t change x.
@@ -47,13 +63,13 @@ There are four directions, each direction represent with a number.
 
 3 - direction West
 
-
- Users can select a choice to interact with this application. This design makes this application extensible and
- increases the flexibility of this application. This design provides an easy way to upgrade or increase more
- functions of this application without changing the core part.
+# Extensibility 
+Users can select a choice to interact with this application. This design makes this application extensible and
+increases the flexibility of this application. This design provides an easy way to upgrade or increase more
+functions of this application without changing the core part.
  
- For now, there are 2 options for users to choose:
+For now, there are 2 options for users to choose:
  
- 1. Create a new robot to start the game
+1. Create a new robot to start the game
  
- 2. Exit the application
+2. Exit the application
