@@ -2,7 +2,7 @@ package Code;
 
 /**
  *
- * Represents a robot class
+ * Represents the Robot class
  *
  * @author Xiaoyu Sun
  *
@@ -24,6 +24,7 @@ public class Robot {
      * @param facingDirection robot's current facing direction
      * @param distanceFromStartPoint the minimum amount of distance to get back to the starting point (the target
      *                               Output of this application)
+     *
      */
     public Robot(int coordinateX, int coordinateY, int facingDirection, int distanceFromStartPoint) {
 

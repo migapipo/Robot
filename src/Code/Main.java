@@ -278,7 +278,6 @@ public class Main {
                     return false;
                 }
             }
-
         }
         return true;
     }
@@ -313,7 +312,6 @@ public class Main {
             case -1:
                 facingDirection = "West";
                 break;
-
         }
         return facingDirection;
     }
