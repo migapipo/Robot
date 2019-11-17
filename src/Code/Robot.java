@@ -67,18 +67,34 @@ public class Robot {
         this.coordinateY = coordinateY;
     }
 
+    /**
+     * Returns the current facing direction
+     * @return he current facing direction represents as a number from 0 to 3
+     *
+     */
     public int getFacingDirection() {
         return facingDirection;
     }
-
+    /**
+     * Change the facing direction of a robot
+     * @param facingDirection
+     */
     public void setFacingDirection(int facingDirection) {
         this.facingDirection = facingDirection;
     }
 
+    /**
+     * Returns the distance from start point
+     * @return the distance from start point as an integer
+     */
     public int getDistanceFromStartPoint() {
         return distanceFromStartPoint;
     }
 
+    /**
+     * Change the distance from start point
+     * @param distanceFromStartPoint
+     */
     public void setDistanceFromStartPoint(int distanceFromStartPoint) {
         this.distanceFromStartPoint = distanceFromStartPoint;
     }
