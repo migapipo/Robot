@@ -22,7 +22,7 @@ This zip file contains the source code of this application:
     /Code - main function code to implement the application
     /Test - the unit test using JUnit4 library
     
-## Background
+### Background
                N
                |
                |
@@ -63,8 +63,8 @@ There are four directions, each direction represent with a number.
 
 3 - direction West
 
-# Extensibility 
-Users can select a choice to interact with this application. This design makes this application extensible and
+### Extensibility 
+Users can select a choice to interact with this application. This design makes this application extensible and 
 increases the flexibility of this application. This design provides an easy way to upgrade or increase more
 functions of this application without changing the core part.
  
@@ -73,3 +73,39 @@ For now, there are 2 options for users to choose:
 1. Create a new robot to start the game
  
 2. Exit the application
+
+### Steps to run the application
+
+1. Start running the application.
+
+2. You will see a Welcome message. 
+
+3. Make sure you enter correct User Choice in the Main Menu (either 1 or 2 in this case).
+
+   You can see the main menu as follows including 2 choices:
+   
+        1. Create a new robot to start the game 
+        
+        2. Exit the application
+        
+4. Make your selection by typing 1 or 2. Enter a number of "1" or "2" to continue. 
+
+5. You can select a choice to implement different functions as you need and get relevant result (Extensibility). 
+The result of this application will be given in a string format. Also, you can select "2" to exit the application.
+
+6. If you enter number "1"", you need to input necessary parameters for move the robot. Please follow the
+instructions given by the application to reach the output.
+NOTE: All the inputs should follow the input format, otherwise the application will output a string says: 
+            
+            "Invalid Entries! Please try again and re-enter another list of commands! "
+     
+   It indicates that the format of the input is not correct. 
+   You need to try again to input a string of comma-separated commands in correct format.
+
+7. After the main function of the application implemented, the application will return to the main menu. You can 
+choose to continue or exit the application.
+
+
+
+
+
